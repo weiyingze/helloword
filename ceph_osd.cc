@@ -17,8 +17,6 @@ class ConfigurationSectionError(Exception):
     def __init__(self, section):
         self.section = section
 
-    def __str__(self):
-        return 'Unable to find expected configuration section: "%s"' % self.section
 
 
 class ConfigurationKeyError(Exception):
